@@ -1,0 +1,60 @@
+.tasklist-section {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-direction: column;
+	width: 50%;
+	border-radius: 10px;
+	// padding: 2rem;
+	background-color: #007acc;
+	overflow: auto;
+
+	.search-container {
+		width: 100%;
+	}
+	.tasks-wrapper {
+		margin-top: 1rem;
+		height: 100%;
+		width: 100%;
+		overflow: auto;
+
+		.task-item {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: -moz-available;
+			width: -webkit-fill-available;
+			padding: 1rem;
+			margin-left: 1rem;
+			margin-right: 1rem;
+			border-radius: 10px;
+			background-color: #fff;
+			margin-bottom: 1rem;
+			box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+			cursor: pointer;
+
+			&.task-item-selected {
+				background-color: #b7b7b7;
+				// Additional selected item styles...
+			}
+
+			.task-item__id {
+				font-size: 1rem;
+				font-weight: 400;
+				color: #000;
+			}
+
+			.task-item__title {
+				font-size: 1rem;
+				font-weight: 400;
+				color: #000;
+			}
+
+			.task-item__description {
+				font-size: 1rem;
+				font-weight: 400;
+				color: #000;
+			}
+		}
+	}
+}
